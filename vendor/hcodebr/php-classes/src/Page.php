@@ -14,7 +14,7 @@ class Page {
 
 	public function __construct(){
 
-		$this->options = array_merge($this->defaults, $opts);
+		$this->options = array_merge($this->$defaults, $options);
 
 		$config = array(
 			"tpl_dir"    => $_SERVER["DOCUMENT_ROOT"]."/views/",
