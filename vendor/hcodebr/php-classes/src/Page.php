@@ -12,9 +12,9 @@ class Page {
 		"data"=>[]
 	];
 
-	public function __construct(){
+	public function __construct($opts = array()){
 
-		$this->options = array_merge($this->$defaults, $options);
+		$this->options = array_merge($this->defaults, $opts);
 
 		$config = array(
 			"tpl_dir"    => $_SERVER["DOCUMENT_ROOT"]."/views/",
